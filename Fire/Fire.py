@@ -14,10 +14,9 @@ def choose_video():
     return file_path
 
 # Videoyu oynatmak için fonksiyon
-def play_video():
-    video_path = choose_video()  # Kullanıcının video seçmesini sağla
-    if video_path:
-        cap = cv2.VideoCapture(video_path)
+def play_video(video_source=None):
+    if video_source is not None:
+        cap = cv2.VideoCapture(video_source)
 
         # Video dosyasının genişlik ve yüksekliğini al
         frame_width = int(cap.get(3))
@@ -107,12 +106,14 @@ created_by_label = tk.Label(root, text=created_by_text, font=("Helvetica", 10, "
 created_by_label.place(relx=0.99, rely=0.99, anchor=tk.SE)
 
 # Videoyu seçme butonu
-select_button = tk.Button(root, text="Select Video", font=("Helvetica", 14), command=play_video)
-select_button.place(relx=0.5, rely=0.5, anchor=tk.CENTER)
-
+select_button = tk.Button(root, text="\U0001F4C1 Select Video", font=("Helvetica", 14), command=lambda: play_video(choose_video()))
+select_button.place(relx=0.62, rely=0.5, anchor=tk.CENTER)
+# Gerçek zamanlı tespit butonu
+live_button = tk.Button(root,  text="\U0001F4F9 Live Video", font=("Helvetica", 14), command=lambda: play_video(0),  borderwidth=2)
+live_button.place(relx=0.3, rely=0.5, anchor=tk.W)
 # Çıkış butonu
-quit_button = tk.Button(root, text="Quit", font=("Helvetica", 14), command=root.destroy)
-quit_button.place(relx=0.5, rely=0.6, anchor=tk.CENTER)
+quit_button = tk.Button(root, text="\u2716 Quit", font=("Helvetica", 14), command=root.destroy)
+quit_button.place(relx=0.5, rely=0.7, anchor=tk.CENTER)
 
 # Arayüzü çalıştır
 root.mainloop()
