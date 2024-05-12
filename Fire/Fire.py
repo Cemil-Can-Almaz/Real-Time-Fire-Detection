@@ -109,7 +109,7 @@ created_by_label.place(relx=0.99, rely=0.99, anchor=tk.SE)
 select_button = tk.Button(root, text="\U0001F4C1 Select Video", font=("Helvetica", 14), command=lambda: play_video(choose_video()))
 select_button.place(relx=0.62, rely=0.5, anchor=tk.CENTER)
 # Gerçek zamanlı tespit butonu
-live_button = tk.Button(root,  text="\U0001F4F9 Live Video", font=("Helvetica", 14), command=lambda: play_video(0),  borderwidth=2)
+live_button = tk.Button(root,  text="\U0001F4F9 Live Detection", font=("Helvetica", 14), command=lambda: play_video(0),  borderwidth=2)
 live_button.place(relx=0.3, rely=0.5, anchor=tk.W)
 # Çıkış butonu
 quit_button = tk.Button(root, text="\u2716 Quit", font=("Helvetica", 14), command=root.destroy)
