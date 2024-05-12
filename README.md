@@ -21,8 +21,9 @@ Yangın tespit sistemi arayüzünü kullanmak için aşağıdaki adımları izle
 
 1. Proje dosyalarını bilgisayarınıza indirin.
 2. Ana dizinde bulunan "Fire.py" dosyasını çalıştırın.
-3. Arayüz penceresi açıldığında, "Select Video" düğmesine tıklayarak istediğiniz video dosyasını seçin.
-4. Video otomatik olarak oynatılacak ve yangın tespiti işlemi başlayacaktır.
-5. İşlem tamamlandığında, videoyu kapatmak için klavyeden "1" tuşuna basın ve arayüzü kapatmak için "Quit" düğmesine tıklayın.
+3. Video ile tespit için arayüz penceresi açıldığında, "Select Video" düğmesine tıklayarak istediğiniz video dosyasını seçin.
+4. Gerçek zamanlı tespit için arayüz penceresi açıldığında "Live Detection" düğmesine tıklayarak tespiti başlatabilirsiniz.
+5. Video otomatik olarak oynatılacak ve yangın tespiti işlemi başlayacaktır.
+6. İşlem tamamlandığında, videoyu kapatmak için klavyeden "1" tuşuna basın ve arayüzü kapatmak için "Quit" düğmesine tıklayın.
 
 
