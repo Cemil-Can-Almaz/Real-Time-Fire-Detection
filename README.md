@@ -4,9 +4,16 @@ Bu proje, YOLOv8 nesne algılama algoritması kullanılarak yangın tespiti yapm
 ## Kurulum
 #### Projenin çalıştırılması için Python ve diğer gerekli kütüphanelerin yüklenmesi gerekmektedir. Aşağıdaki komutlarla gerekli bağımlılıkların yüklenmesi sağlanabilir:
 
-```pip install -r requirements.txt```
+``` pip install -r requirements.txt```
 
  ### Ayrıca, projeye bir arayüz eklendi. Arayüz, kullanıcıların kolayca yangın tespiti yapmasını sağlar.
+
+ ## Arayüz Kurulumu
+
+Arayüz, Tkinter kütüphanesi kullanılarak yapılmıştır. Eğer bilgisayarınızda Tkinter yüklü değilse, aşağıdaki komutları kullanarak yükleyebilirsiniz:
+
+
+```pip install tk```
 
 ## Arayüz Kullanımı
 
