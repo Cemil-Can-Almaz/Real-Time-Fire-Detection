@@ -7,6 +7,9 @@ Bu proje, YOLOv8 nesne algılama algoritması kullanılarak yangın tespiti yapm
 ``` pip install -r requirements.txt```
 
  ### Ayrıca, projeye bir arayüz eklendi. Arayüz, kullanıcıların kolayca yangın tespiti yapmasını sağlar.
+ 
+ ![image](https://github.com/cemilcan99/Real-Time-Fire-Detection/assets/65957701/9ad49428-6d5e-48e8-aee5-2cc7431a6db4)
+
 
  ## Arayüz Kurulumu
 
